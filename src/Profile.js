@@ -30,7 +30,7 @@ export function createProfile(input) {
 
 export function filterProfile(input) {
     filteredUsers = users.filter((user) => {
-        return user.major === input; //only one input which is the major
+        return user.major === input.name; //only one input which is the major
     });
     return filteredUsers;
 }

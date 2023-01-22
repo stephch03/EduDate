@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EduDate</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <script src="src/handler.js"></script>
+    <h1>EduDate</h1>
+    <h2>Create New Profile</h2>
+    <form id="createProfileForm">
+      name: <input type="text" name="name" /><br />
+      age: <input type="text" name="age" /><br />
+      gender: <input type="text" name="gender" /><br />
+      personality: <input type="text" name="personality" /><br />
+      major: <input type="text" name="major" /><br />
+      <!-- interests:
+      <input
+        type="text"
+        name="interests"
+        placeholder="separate each by comma"
+      /><br />
+      subscribed?: <input type="checkbox" name="subscribed" /><br /> -->
+      <input type="submit" value="Create!" /><br />
+    </form>
+    <h2>Filter Profiles</h2>
+    <form id="readProfileForm">
+      major: <input type="text" name="major" /><br />
+      <input type="submit" value="Filter!" />
+    </form>
+    <h2>Update Profile</h2>
+    <form id="updateProfileForm">
+      name: <input type="text" name="name" /><br />
+      age: <input type="text" name="age" /><br />
+      gender: <input type="text" name="gender" /><br />
+      personality: <input type="text" name="personality" /><br />
+      major: <input type="text" name="major" /><br />
+      <input type="submit" value="Update!" />
+    </form>
+    <h2>Delete Profile</h2>
+    <form id="deleteProfileForm">
+      name: <input type="text" name="name" /><br /><br />
+      <input type="submit" value="Delete!" />
+    </form>
+    <h2>Result</h2>
+    <pre id="result"></pre>
+  </body>
+</html>
