@@ -15,14 +15,20 @@
           Change Profile Pic 
         </a>
       </div>
-      <div class="info">
+      <!-- <div class="info">
   
         <label for="Name"> Name </label>
         <input type="text" id="Name" name="Name" placeholder="">
         <label for="Age"> Age </label>
         <input type="text" id="Age" name="Age" placeholder="">
         <label for="Gender"> Gender </label>
-        <input type="text" id="Gender" name="Gender" placeholder="">
+        <select id="Gender">
+          <option>Female</option>
+          <option>Male</option>
+          <option>Non-Binary</option>
+          <option>Other</option>
+          <option>Prefer not to say</option>
+        </select>
         <label for="Personality"> Personality </label>
         <input type="text" id="Personality" name="Personality" placeholder="ex. ENFP">
         <label for="Major"> Major </label>
@@ -30,8 +36,21 @@
         <label for="Interests"> Interests </label>
         <input type="text" id="Interests" name="Interests" placeholder="">
       </div>
+      <div class="button">
+        <input type="submit" value="Create Profile!">
+      </div> -->
       
-      
+      <div class="form">
+        <form id="frm1" name="frm1" action="/action_page.php">
+          Name: <br> <input type="text" id="name" name="name"> <br>
+          Age: <br> <input type="text" id="age" name="age" placeholder=""> <br>
+          Gender: <br> <input type="text" id="gender" name="gender" placeholder=""> <br>
+          Personality Type: <br> <input type="text" id="personality" name="personality" placeholder="ex. ENFP"> <br>
+          Major: <br> <input type="text" id="major" name="major" placeholder="ex. ENFP">
+          Interests: <br> <input type="text" id="interests" name="interests" placeholder="ex. ENFP"> <br>
+          <input type="submit" value="Create Profile!">
+        </form> 
+      </div>
       
 
 
