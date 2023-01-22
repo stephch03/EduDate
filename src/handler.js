@@ -12,15 +12,13 @@ import {
   const deleteProfileForm = document.getElementById("deleteProfileForm");
   
   createProfileForm.addEventListener("submit", function (event) {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
     const result = createProfile(formProps);
-    showResult.innerHTML = JSON.stringify(result, null, 2);
+    showResult = JSON.stringify(result, null, 2);
   });
   
   filterProfileForm.addEventListener("submit", function (event) {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
     const result = filterProfile(formProps);
@@ -28,7 +26,6 @@ import {
   });
   
   updateProfileForm.addEventListener("submit", function (event) {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
     const result = updateProfile(formProps);
@@ -36,7 +33,6 @@ import {
   });
   
   deleteProfileForm.addEventListener("submit", function (event) {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
     const result = deleteProfile(formProps);
